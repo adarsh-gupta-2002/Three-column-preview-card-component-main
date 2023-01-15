@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    
+    --transparent-white :  hsla(0, 0%, 100%, 0.75);
+    --very-light-gray:   hsl(0, 0%, 95%);
+
+    --primary-ff : 'Lexend Deca', sans-serif;
+    --secondary-ff : 'Big Shoulders Display', cursive;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-size: 15px;
+    font-family: var(--primary-ff);
+    font-weight: 400;
+    background: var(--transparent-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 1em;
+    height: 100vh;
+    
+}
+
+p{
+    color: var(--transparent-white);
+    margin-bottom: 4.5em;
+}
+ 
+
+.btn , h1{
+    
+    color: var(--transparent-white);
+}
+.card_1{
+    background-color:var(--bright-orange) ;
+}
+
+.card_2{
+    background: var(--dark-cyan);
+}
+
+.card_3{
+    background: var(--very-dark-cyan);
+}
+h1{
+
+    font-family: var(--secondary-ff);
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    margin-bottom: 1.1em;
+    font-size: 2.2rem;
+
+}
+
+.btn{
+ 
+    padding: 0.8em 2em;
+    border-radius: 3em;
+    border: none;
+    font-family: var(--primary-ff);
+    font-weight: 400;
+    font-size: 0.9em;
+
+}
+
+.container .card .btn:hover{
+    background: none;
+    border: 3px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+}
+
+.card_1 .btn{
+    color: var(--bright-orange);
+}
+.card_2 .btn{
+    color: var(--dark-cyan);
+}
+.card_3 .btn{
+    color: var(--very-dark-cyan);
+}
+
+.card{
+    padding: 3em 2em 2.7em 1em;
+    width: 250px;
+}
+
+img{
+    margin-bottom: 2em;
+}
+
+.container{
+    width: 251px;
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    
+    margin: auto;
+     
+    /* margin-right: auto; */
+     
+}
+
+@media(min-width : 750px){
+    .container{
+        width: 750px;
+        grid-template-columns: repeat(3 , 1fr);
+        
+    }
+ 
+}
+
+
